@@ -1,0 +1,17 @@
+// @import 'variables';
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $dr-breakpoint-tablet) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: $dr-breakpoint-mobile) and (max-width: $dr-breakpoint-tablet) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: $dr-breakpoint-mobile) {
+      @content;
+    }
+  }
+}

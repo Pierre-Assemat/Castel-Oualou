@@ -1,0 +1,20 @@
+{
+  "name": "castel_oualou",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Pierre Assemat (assematpierrecpe@gmail.com)",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}

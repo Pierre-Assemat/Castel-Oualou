@@ -1,0 +1,31 @@
+// @import 'variables';
+
+.caption {
+  font-size: $font-size-caption; // 12px
+  line-height: $default-line-height;
+}
+
+.body {
+  font-size: $font-size-body; // 14px
+  line-height: $default-line-height;
+}
+
+.subheader {
+  font-size: $font-size-subheader; // 16px
+  line-height: $default-line-height;
+}
+
+.subtitle {
+  font-size: $font-size-subtitle; // 20px
+  line-height: $default-line-height;
+}
+
+.title {
+  font-size: $font-size-title; // 24px
+  line-height: $default-line-height;
+}
+
+.display {
+  font-size: $font-size-display; // 36px
+  line-height: $default-line-height;
+}
