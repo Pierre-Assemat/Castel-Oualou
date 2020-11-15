@@ -57,8 +57,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      style: path.join(__dirname, 'style')
-    }
+      src: path.join(__dirname, 'src/'),
+      style: path.join(__dirname, 'style/'),
+      assets: path.join(__dirname, 'assets/')
+    },
   },
   plugins: [
     new VueLoaderPlugin(),

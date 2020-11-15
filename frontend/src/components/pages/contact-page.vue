@@ -1,20 +1,18 @@
 <template>
-  <div id="home">
-    <nav-bar/>
-  </div>
+  <div id="todo"></div>
 </template>
 
 <script>
 export default {
-  props: {
-    message: {
-      type: String, default: 'Default'
-    }
-  },
+  props: {},
 
   data() {
     return {}
   },
+
+  computed: {},
+
+  methods: {}
 }
 </script>
 

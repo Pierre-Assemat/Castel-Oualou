@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <home :message="message"/>
+    <nav-bar/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,9 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import './style/main.scss';
+@import 'style/main.scss';
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-family;
 }
 </style>

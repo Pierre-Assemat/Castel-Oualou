@@ -12,6 +12,8 @@ $font-size-display: 36px;
 
 $default-line-height: 1.4;
 
+$font-family: 'Roboto', sans-serif;
+
 // opacity
 $opacity-light: 0.6;
 $opacity-lighter: 0.3;
@@ -30,13 +32,18 @@ $light-grey-light: rgba(#f4f7fb, $opacity-light);
 $light-grey-lighter: rgba(#f4f7fb, $opacity-lighter);
 $light-grey-lightest: rgba(#f4f7fb, $opacity-lightest);
 
+$yellow: #d4af37;
+
 // borders
 $border-radius-big: 12px;
 $border-radius: 6px;
 $border-radius-small: 4px;
 
 // margin/padding
-$default-margin: 8px;
+$margin: 8px;
+$margin-large: 16px;
+$margin-larger: 16px;
+$margin-largest: 32px;
 
 // breakpoints
 $breakpoint-mobile: 480px;

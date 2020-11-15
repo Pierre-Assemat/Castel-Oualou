@@ -1,18 +1,19 @@
 <template>
-  <div id="todo"></div>
+  <div id="home">
+  </div>
 </template>
 
 <script>
 export default {
-  props: {},
+  props: {
+    message: {
+      type: String, default: 'Default'
+    }
+  },
 
   data() {
     return {}
   },
-
-  computed: {},
-
-  methods: {}
 }
 </script>
 
