@@ -2,11 +2,5 @@
 @import 'mixins';
 @import 'typography';
 @import 'layout';
-
-.reset-css {
-  all: initial;
-
-  * {
-    all: unset;
-  }
-}
+@import 'helpers';
+@import 'reset';

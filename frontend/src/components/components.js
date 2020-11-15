@@ -1,10 +1,14 @@
 import constants from 'src/constants.js'
 
-import navBar from './commons/nav-bar.vue'
+import Footer from './commons/footer-component.vue'
+import Header from './commons/header-component.vue'
+import NavBar from './commons/nav-bar.vue'
 
 
 const components = {
-  "nav-bar": navBar,
+  "footer-component": Footer,
+  "header-component": Header,
+  "nav-bar": NavBar,
 }
 
 const pageComponents = constants.ROUTES.reduce((components, route) => {

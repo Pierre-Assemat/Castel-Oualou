@@ -1,0 +1,12 @@
+body,
+p {
+  margin: 0;
+}
+
+.reset-css {
+  all: initial;
+
+  * {
+    all: unset;
+  }
+}

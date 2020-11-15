@@ -16,4 +16,7 @@ const constants = {
   ROUTES
 }
 
+// logo height 150px
+// nav height 70px
+
 export default constants

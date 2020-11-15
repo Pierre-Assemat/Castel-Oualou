@@ -1,19 +1,26 @@
 <template>
-  <div id="nav-bar">
-    <ul class="flex-row">
-      <li v-for="item in navItems" :key="item.id">
-        <a v-if="item.component === 'link'" :href="item.url" class="btn-nav reset-css">{{ item.display_name }}</a>
-        <router-link v-else :to="getPath(item)" class="btn-nav reset-css">{{ item.display_name }}</router-link>
-      </li>
-    </ul>
-  </div>
+    <div id="nav-bar" :class="{ fixed: isFixed }" class="flex-row-c-c">
+      <nav>
+        <ul class="flex-row-c">
+          <li v-for="item in navItems" :key="item.id">
+            <a v-if="item.component === 'link'" :href="item.url" class="btn-nav reset-css">{{ item.display_name }}</a>
+            <router-link v-else :to="getPath(item)" class="btn-nav reset-css">{{ item.display_name }}</router-link>
+          </li>
+        </ul>
+      </nav>
+    </div>
 </template>
 
 <script>
 import constants from 'src/constants.js'
 
 export default {
-  props: {},
+  props: {
+    isFixed: {
+      type: Boolean,
+      default: false
+    },
+  },
 
   data() {
     return {}
@@ -23,6 +30,7 @@ export default {
     navItems() {
       return constants.ROUTES
     },
+
     currentRoute() {
       return this.$route.name
     }
@@ -31,22 +39,28 @@ export default {
   methods: {
     getPath(item) {
       return `/${item.id}`
-    }
+    },
   }
 }
 </script>
 
 <style scoped lang="scss">
+#nav-bar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  justify-content: flex-end;
 }
 
 .btn-nav {
   font-family: $font-family;
-  padding: 8px;
+  padding: $margin;
+  margin: $margin-largest;
   cursor: pointer;
   color: $black;
 
@@ -57,9 +71,5 @@ ul {
   &.router-link-active {
     color: $yellow;
   }
-}
-
-.test {
-  color: $black-lighter;
 }
 </style>
