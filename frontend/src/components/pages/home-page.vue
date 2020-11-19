@@ -1,30 +1,53 @@
 <template>
   <div id="home">
-    <p>
-      What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <section class="flex-row-sb section-1">
+      <div class="image-container">
+        <img src="assets/wine_glasses.png" alt="wine glasses"/>
+      </div>
+      <div class="text-bloc flex-col-c">
+        <p class="body">
+          Un savoir-faire de vigneron indépendant transmis de génération en génération pour une production de qualité.
+        </p>
+        <p class="body">
+          Situé à Roquemaure et Saint Laurent des Arbres, au cœur de l’appellation LIRAC un terroir d’argile
+          rouge à galets roulés, de côteaux secs et rocailleux, d’éboulis calcaires, pour le Domaine des
+          Causses et Saint Eynes, Argilo sableux pour le Domaine de Castel Oualou et le Domaine des
+          Garrigues.
+        </p>
+      </div>
+      <!-- <div class="image-container">
+        <img class="reverse-img" src="assets/wine_glasses.png" alt="wine glasses"/>
+      </div> -->
+    </section>
 
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    <section class="flex section-2" :style="{ backgroundImage: `url(${backgroundImage})` }">
+      <div class="text-bloc flex-col-c blur">
+        <p class="body">
+          Plus de 90 hectares de vignes classées en Appellation Lirac et Côtes du Rhône exposition Nord –
+          Sud répartis sur trois Domaines :
+          <ul>
+            <li>Le Domaine des Garrigues - 6 hectares</li>
+            <li>Le Domaine des Causses et Saint Eynes - 32 hectares</li>
+            <li>Le Domaine de Castel Oualou - 52 hectares.</li>
+          </ul>
+        </p>
 
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </div>
+      <!-- <img class="" src="assets/background/vineyard.png" alt="vineyard"/> -->
+    </section>
 
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    <p class="body">
+      Lutte raisonnée et Travail du sol par respect de l’environnement.
+    </p>
 
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    <p class="body">
+      Lors des vendanges, chaque cépage est ramassé séparément en fonction de la maturité. Certains
+      d’entre eux sont assemblés avant fermentation.
+    </p>
 
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    <p class="body">
+      L’âge moyen des vignes est de 40 ans.
     </p>
 
     <img src="assets/castel.png" alt="the castel" width="100%"/>
@@ -34,18 +57,57 @@
 
 <script>
 export default {
-  props: {
-    message: {
-      type: String, default: 'Default'
-    }
-  },
+  props: {},
 
   data() {
-    return {}
+    return {
+      backgroundImage: 'assets/background/vineyard.jpg'
+    }
   },
 }
 </script>
 
 <style scoped lang="scss">
-// scoped style
+  .reverse-img {
+    transform: scaleX(-1);
+  }
+
+  .section-1 {
+    min-height: 400px;
+    background-color: $background-color;
+  }
+
+  .section-2 {
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .text-bloc {
+    color: $black;
+    max-width: 500px;
+    padding: 0 $margin-larger;
+    margin: $margin-larger $margin-largest;
+    border-radius: $border-radius;
+
+    & > p {
+      margin: $margin-large;
+      text-align: justify;
+    }
+  }
+
+  .image-container {
+    max-width: 40%;
+
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .blur {
+    backdrop-filter: blur(15px);
+    background: $black-lightest;
+  }
 </style>

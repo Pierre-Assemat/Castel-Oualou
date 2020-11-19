@@ -45,6 +45,13 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+        }
+      },
+      {
         enforce: 'pre',
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',

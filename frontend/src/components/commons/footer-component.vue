@@ -1,6 +1,6 @@
 <template>
   <footer id="footer" class="flex-row-c">
-    <small>&copy; Copyright {{currentYear}}, Domaine Castel Oualou</small>
+    <small>&copy; Copyright {{currentYear}}, Domaine Castel Oualou by Pierre Assemat</small>
   </footer>
 </template>
 

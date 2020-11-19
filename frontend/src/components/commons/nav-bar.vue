@@ -3,8 +3,8 @@
       <nav>
         <ul class="flex-row-c">
           <li v-for="item in navItems" :key="item.id">
-            <a v-if="item.component === 'link'" :href="item.url" class="btn-nav reset-css">{{ item.display_name }}</a>
-            <router-link v-else :to="getPath(item)" class="btn-nav reset-css">{{ item.display_name }}</router-link>
+            <a v-if="item.component === 'link'" :href="item.url" class="reset-link subtitle btn-nav">{{ item.display_name }}</a>
+            <router-link v-else :to="getPath(item)" class="reset-link subtitle btn-nav">{{ item.display_name }}</router-link>
           </li>
         </ul>
       </nav>
@@ -49,6 +49,7 @@ export default {
   width: 100%;
   height: 70px;
   background-color: white;
+  z-index: 100;
 }
 
 ul {
@@ -61,7 +62,6 @@ ul {
   font-family: $font-family;
   padding: $margin;
   margin: $margin-largest;
-  cursor: pointer;
   color: $black;
 
   &:hover {
